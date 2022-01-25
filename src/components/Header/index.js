@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaSearch, FaBell } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 import {
   Nav,
@@ -16,38 +17,38 @@ export default function Header() {
   return (
     <Nav>
       <NavPrimary>
-        <a href="/" title="Netflix">
+        <Link to="/" title="Netflix">
           <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix" />
-        </a>
+        </Link>
         <ul>
           <li />
           <li>
-            <a href="/">Início</a>
+            <Link to="/">Início</Link>
           </li>
           <li>
-            <a href="*****">Séries</a>
+            <Link to="*****">Séries</Link>
           </li>
           <li>
-            <a href="**">Filmes</a>
+            <Link to="**">Filmes</Link>
           </li>
           <li>
-            <a href="***">Bombando</a>
+            <Link to="***">Bombando</Link>
           </li>
           <li>
-            <a href="****">Minha lista</a>
+            <Link to="****">Minha lista</Link>
           </li>
         </ul>
       </NavPrimary>
       <NavSecondary>
         <div>
-          <a href="*">
+          <Link to="*">
             <FaSearch />
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="*">
+          <Link to="*">
             <FaBell />
-          </a>
+          </Link>
         </div>
         <DivProfile>
           <img
@@ -61,46 +62,46 @@ export default function Header() {
           <Profiles>
             <ul>
               <li>
-                <a href="/">
+                <Link to="/">
                   <img
                     src="https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABcD7ar6C7nv9U2YfOu33ikPAO4VittMNlwNlhsCdAxmbJYGrr46WCmGJfN4fkZ1D3AufurqS0kCYDoV4La-_xxI.png?r=318"
                     alt="Usuário"
                   />
                   <p>Usuário 1</p>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/">
+                <Link to="/">
                   <img
                     src="https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABUAcaDX2-P091dLEFUNR0mKUnvOFbw0fDUDr0wK-ixdAFlAkZ9K5bwHPEiZ12klt1dkSJpf4R-SIZJDAhLSKDns.png?r=f08"
                     alt="Usuário"
                   />
                   <p>Usuário 2</p>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/">
+                <Link to="/">
                   <img
                     src="https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABfWOpa2joflnVlT5uoJYcQft0GQ6CNr0v5VtcFHYFAfkUEZxpRj47u0l88OTcMzBeCOotpXX-LL5kjTT-Q4rYls.png?r=c71"
                     alt="Usuário"
                   />
                   <p>Usuário 3</p>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/">
+                <Link to="/">
                   <img
                     src="https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABUqbzDsUyVm9_HkrxnE0rB5QesVUfzfGKR1n8ukjfxgqkS59Reob6hiD86p_xefui8gzz3EILRE0t0yiv_eZ-NE.png?r=abe"
                     alt="Usuário"
                   />
                   <p>Usuário 4</p>
-                </a>
+                </Link>
               </li>
               <span>
                 <li>
-                  <a href="*">
+                  <Link to="*">
                     <p>Gerenciar Perfis</p>
-                  </a>
+                  </Link>
                 </li>
               </span>
             </ul>
@@ -108,19 +109,19 @@ export default function Header() {
           <ConfigsAccountMenu>
             <ul>
               <li>
-                <a href="*">
+                <Link to="*">
                   <p>Conta</p>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="*">
+                <Link to="*">
                   <p>Centro de ajuda</p>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="*">
+                <Link to="*">
                   <p>Sair da Netflix</p>
-                </a>
+                </Link>
               </li>
             </ul>
           </ConfigsAccountMenu>
