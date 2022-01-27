@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { FaSortDown } from 'react-icons/fa';
 
 export const Nav = styled.nav`
   position: absolute;
@@ -69,15 +68,18 @@ export const NavSecondary = styled.div`
   }
 `;
 
-export const SortDown = styled(FaSortDown)`
-  padding-left: 9px;
-  width: 20px;
-  height: 25px;
-  border: 20px 20px 0 20px;
+export const SortDown = styled.span`
+  margin-left: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #fff transparent transparent transparent;
+  transition: transform 367ms cubic-bezier(0.21, 0, 0.07, 1), -webkit-transform 367ms cubic-bezier(0.21, 0, 0.07, 1),
+    -moz-transform 367ms cubic-bezier(0.21, 0, 0.07, 1), -o-transform 367ms cubic-bezier(0.21, 0, 0.07, 1);
 `;
 
 export const AccountMenu = styled.div`
-  display: none;
   background-color: rgba(0, 0, 0, 9);
   position: absolute;
   top: 108%;
@@ -89,26 +91,27 @@ export const AccountMenu = styled.div`
   border: #1f1f1f 1px solid;
   border-radius: 1px;
   flex-direction: column;
+  display: ${({ accountMenuOn }) => (accountMenuOn ? 'flex' : 'none')};
+
+  :hover {
+    display: flex;
+  }
 
   p:hover {
     border-bottom: 1px solid #fff;
     margin-bottom: -1px;
   }
 `;
+
 export const DivProfile = styled.div`
-  padding: 10px;
+  margin: 10px;
   display: flex;
   color: #fff;
   cursor: pointer;
-
+  align-items: center;
   :hover {
     ${SortDown} {
-      transform: translateX(10px) rotate(180deg) translateY(-5px);
-      transition-duration: 367ms;
-      transition-timing-function: cubic-bezier(0.21, 0, 0.07, 1);
-      ${AccountMenu} {
-        display: flex;
-      }
+      transform: rotate(180deg);
     }
   }
 `;

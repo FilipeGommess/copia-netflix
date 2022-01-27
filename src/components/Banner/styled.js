@@ -16,6 +16,7 @@ export const Container = styled.div`
     opacity: 1;
     width: 100%;
   }
+  z-index: -1;
 `;
 
 export const InfoNavContainer = styled.div`

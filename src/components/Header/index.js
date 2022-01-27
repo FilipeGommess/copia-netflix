@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaSearch, FaBell } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -14,6 +14,9 @@ import {
 } from './styled';
 
 export default function Header() {
+  const [accountMenuOn, setAccountMenuActive] = useState(false);
+  const showAccountMenu = () => setAccountMenuActive(!accountMenuOn);
+
   return (
     <Nav>
       <NavPrimary>
@@ -50,15 +53,14 @@ export default function Header() {
             <FaBell />
           </Link>
         </div>
-        <DivProfile>
+        <DivProfile onMouseOver={showAccountMenu}>
           <img
             src="https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXrmj4H9RUyDiO28L-KJxDGc9oDijd4jnl5RyCkiWMPB6xFxiVdRiKdOcNjG8kn4A3idJRTGAzuBuQ__c6yl1m0.png?r=fcc"
             alt="Usuário"
           />
-
           <SortDown />
         </DivProfile>
-        <AccountMenu>
+        <AccountMenu accountMenuOn={accountMenuOn}>
           <Profiles>
             <ul>
               <li>

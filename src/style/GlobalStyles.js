@@ -19,7 +19,7 @@ export default createGlobalStyle`
   body{
     font-family: 'Roboto';
     font-style: normal;
-    width: 100vw;
+    width: 100%;
   }
 
   a {
