@@ -17,15 +17,15 @@ export default function Nav() {
   return (
     <Container>
       <img
-        src="https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABRQqYy_FRdu-lF0XTiL7JpvbCtgCUKndncRv07V2OnTqmOYpG-4_Zokd9f1k-XGBznbGgdOJ0TJNjCzHS6N4H1VJAG-u.webp?r=7cd"
+        src="https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABZlXFIzGDr1mRUiDwKcoHp0ooKSfq9DbJn9OoEtk9R1GpNffrO_sGSkSOs5pf3SDALE1UNtgjooAYZJzCzCa6IzVGAJJ.webp?r=de8"
         alt="Background"
       />
       <InfoNavContainer>
         <Info>
           <div>
             <img
-              src="https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABdJES5ZNTvJPf9Z9DXJ9vS-4_17dlRU6AwBEhjV2hn4-jSjENcmxipOqLM8aD1ZjWmdzumpZPIkMOQw32jAQLXrBXonw3JH_3qY86iS8HfP6iJFOId12tTdEQlmRNNSbpXlzhCKbHd1bQa5rJ-7yaZNLtqtPAVKR_re8n86xhfY2lQ.webp?r=c52"
-              alt="Tratamento de Realeza"
+              src="https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABfcYJ2W-jNi_hijQClWi_8Qh8Wal9Ar5KHvqX4PAYvSx_tr_h83Jrh9ufm18PXdth5j7uo0FuzvfFSJPvbVy7VwhSnPariCLYbUPEvLEGx-rY-QyQRV5ayKUqiXCFANQDJQHyAptARTFELzzcJY35rWtuvzmFQlsVRs1l-pduD6Pgw.webp?r=c06"
+              alt="Murderville"
             />
           </div>
           <Synopsis>
