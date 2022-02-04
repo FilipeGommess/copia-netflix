@@ -16,10 +16,15 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+    height: 100%;
+    width: 100%;
+  }
   body{
     font-family: 'Roboto';
     font-style: normal;
     width: 100%;
+    height: 100%;
   }
 
   a {

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const ContainerSlides = styled.div`
-  width: 100%;
   height: 32.1vh;
   background-image: linear-gradient(
     to bottom,
@@ -18,6 +17,7 @@ export const ContainerSlides = styled.div`
   background-color: transparent;
   z-index: -1;
   margin: 3vw 0;
+  padding: 0;
 `;
 
 export const HeaderSlides = styled.div`
