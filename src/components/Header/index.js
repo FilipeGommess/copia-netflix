@@ -14,9 +14,9 @@ import {
 } from './styled';
 
 export default function Header() {
-  const [accountMenuOn, setAccountMenuActive] = useState(false);
-  const showAccountMenu = () => setAccountMenuActive(!accountMenuOn);
-
+  const [accountMenuOn, setAccountMenuActive] = useState(0);
+  const showAccountMenu = () => setAccountMenuActive(accountMenuOn + 1);
+  const hideAccountMenu = () => setAccountMenuActive(accountMenuOn - 1);
   return (
     <Nav>
       <NavPrimary>
@@ -53,7 +53,7 @@ export default function Header() {
             <FaBell />
           </Link>
         </div>
-        <DivProfile onMouseOver={showAccountMenu}>
+        <DivProfile onMouseOver={showAccountMenu} onMouseOut={hideAccountMenu}>
           <img
             src="https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXrmj4H9RUyDiO28L-KJxDGc9oDijd4jnl5RyCkiWMPB6xFxiVdRiKdOcNjG8kn4A3idJRTGAzuBuQ__c6yl1m0.png?r=fcc"
             alt="Usuário"

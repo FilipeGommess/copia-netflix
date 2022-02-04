@@ -91,7 +91,7 @@ export const AccountMenu = styled.div`
   border: #1f1f1f 1px solid;
   border-radius: 1px;
   flex-direction: column;
-  display: ${({ accountMenuOn }) => (accountMenuOn ? 'flex' : 'none')};
+  display: ${({ accountMenuOn }) => (accountMenuOn === 1 ? 'flex' : 'none')};
 
   :hover {
     display: flex;
