@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { FaPlay, FaInfo } from 'react-icons/fa';
+import { AiOutlineInfoCircle } from 'react-icons/ai';
+import { GrPlayFill } from 'react-icons/gr';
 
 export const Container = styled.div`
   height: 56.25vw;
@@ -77,21 +78,22 @@ export const ContainerSynopsiButtons = styled.div`
 export const ContainerPlayButton = styled.div`
   width: 10vw;
   background-color: #ffffff;
-  border: 2px solid #ffffff;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   color: #000000;
-  font-weight: bold;
   margin-right: 10px;
+  font-weight:500;
+
+  :hover {
+    background-color: rgba(255, 255, 255, 0.75);
 `;
 
 export const ContainerInfoButton = styled.div`
   width: 15.6vw;
-
-  background-color: #6d6d6eb3;
+  background-color: rgba(109, 109, 110, 0.7);
   color: #fff;
   font-weight: 500;
   height: 100%;
@@ -99,26 +101,30 @@ export const ContainerInfoButton = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 3px;
+  z-index: 20;
+
+  :hover {
+    background-color: rgba(109, 109, 110, 0.4);
+  }
 `;
 
-export const PlayButton = styled(FaPlay)`
-  color: #000000;
-  background-color: white;
+export const PlayButton = styled(GrPlayFill)`
+  color: rgb(54 27 27);
+  background-color: transparent;
   position: relative;
   width: 23px;
   height: 23px;
   margin-right: 10px;
 `;
 
-export const InfoButton = styled(FaInfo)`
+export const InfoButton = styled(AiOutlineInfoCircle)`
   color: #fff;
   background-color: transparent;
   position: relative;
-  border: 2px #fff solid;
-  border-radius: 100%;
-  height: 24px;
-  width: 24px;
-  margin-right: 12px;
+
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
   padding: 4px;
 `;
 

@@ -80,7 +80,7 @@ export const SortDown = styled.span`
 `;
 
 export const AccountMenu = styled.div`
-  background-color: rgba(0, 0, 0, 9);
+  background-color: rgb(0 0 0 / 97%);
   position: absolute;
   top: 108%;
   right: 6%;

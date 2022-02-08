@@ -15,9 +15,9 @@ export const ContainerSlides = styled.div`
   background-position: 0 top;
   background-repeat: repeat-x;
   background-color: transparent;
-  z-index: -1;
   margin: 3vw 0;
   padding: 0;
+  position: relative;
 `;
 
 export const HeaderSlides = styled.div`
