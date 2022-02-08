@@ -1,37 +1,35 @@
 import styled from 'styled-components';
 
 import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
+import SlidesCarousel from 'react-slick';
 
-export const ContainerSlider = styled.div`
-  max-height: 100%;
-  display: inline-flex;
-`;
+import 'slick-carousel/slick/slick.css';
 
-export const ChevronRight = styled(FaChevronRight)`
+export const ArrowRight = styled(FaChevronRight)`
   font-size: 2.5vw;
   display: none;
 `;
 
-export const ChevronLeft = styled(FaChevronLeft)`
+export const ArrowLeft = styled(FaChevronLeft)`
   font-size: 2.5vw;
   display: none;
 `;
 
-export const Slides = styled.div`
-  display: -webkit-box;
-  padding: 0 4%;
-  height: 100%;
-  width: auto;
+export const Slides = styled(SlidesCarousel)`
+  height: 22vh;
+  display: flex;
+  .slick-list {
+    padding: 0 184px;
+  }
 `;
 
-export const ContainerChevronRight = styled.span`
+export const ContainerArrowRight = styled.span`
   background: rgba(20, 20, 20, 0.5);
   position: absolute;
-  z-index: 20;
-  width: 3.8%;
+  width: 4.2%;
   right: 0;
-  height: 21.86%;
-  display: flex;
+  height: 22vh;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   color: white;
@@ -41,7 +39,7 @@ export const ContainerChevronRight = styled.span`
   :hover {
     cursor: pointer;
     background: rgba(20, 20, 20, 0.7);
-    ${ChevronRight} {
+    ${ArrowRight} {
       display: flex;
       transition: transform 0.1s ease-out 0s, -webkit-transform 0.1s ease-out 0s, -moz-transform 0.1s ease-out 0s,
         -o-transform 0.1s ease-out 0s;
@@ -49,14 +47,14 @@ export const ContainerChevronRight = styled.span`
   }
 `;
 
-export const ContainerChevronLeft = styled.span`
+export const ContainerArrowLeft = styled.span`
   background: rgba(20, 20, 20, 0.5);
   position: absolute;
+  width: 4.2%;
   z-index: 20;
-  width: 3.8%;
   left: 0;
-  height: 21.86%;
-  display: flex;
+  height: 22vh;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   color: white;
@@ -66,7 +64,7 @@ export const ContainerChevronLeft = styled.span`
   :hover {
     cursor: pointer;
     background: rgba(20, 20, 20, 0.7);
-    ${ChevronLeft} {
+    ${ArrowLeft} {
       display: flex;
       transition: transform 0.1s ease-out 0s, -webkit-transform 0.1s ease-out 0s, -moz-transform 0.1s ease-out 0s,
         -o-transform 0.1s ease-out 0s;
@@ -75,14 +73,15 @@ export const ContainerChevronLeft = styled.span`
 `;
 
 export const Slide = styled.div`
-  width: 20%;
-  height: 100%;
   display: flex;
   align-items: center;
   img {
-    border-radius: 5px;
-    padding: 0 3px;
-    width: 100%;
+    border-radius: 3px;
     height: 100%;
+    width: 99%;
+    padding: 0 0.1vw;
+    :hover {
+      cursor: pointer;
+    }
   }
 `;

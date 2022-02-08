@@ -1,46 +1,38 @@
-import React, { useState } from 'react';
-import { chunk } from 'lodash';
+import React from 'react';
 import { SliderData } from './SliderData';
 
-import {
-  ContainerSlider,
-  Slides,
-  ChevronRight,
-  ContainerChevronRight,
-  Slide,
-  ContainerChevronLeft,
-  ChevronLeft,
-} from './styled';
+import { Slides, ArrowLeft, ArrowRight, ContainerArrowRight, ContainerArrowLeft, Slide } from './styled';
 
-export default function Slider(slides = []) {
-  const [current, setCurrent] = useState(0);
-
-  const nextSlide = () => {
-    setCurrent(current === chunk(SliderData, 5).length - 1 ? 0 : current + 1);
+export default function Slider() {
+  const settings = {
+    slidesToScroll: 5,
+    slidesToShow: 5.5,
+    touchMove: false,
+    initialSlide: 1,
+    dots: false,
+    infinite: true,
+    speed: 750,
+    nextArrow: (
+      <ContainerArrowRight>
+        <ArrowRight />
+      </ContainerArrowRight>
+    ),
+    prevArrow: (
+      <ContainerArrowLeft>
+        <ArrowLeft />
+      </ContainerArrowLeft>
+    ),
   };
-  const prevSlide = () => {
-    setCurrent(current === 0 ? chunk(SliderData, 5).length - 1 : current - 1);
-  };
-
-  if (Array.isArray(slides) || slides.length <= 0) return null;
-
   return (
-    <ContainerSlider>
-      <Slides>
-        <ContainerChevronLeft onClick={prevSlide}>
-          <ChevronLeft />
-        </ContainerChevronLeft>
-        <Slide>
-          {chunk(SliderData, 5).map((arraySlide, index) => {
-            return arraySlide.map((slide) => {
-              return index === current && <img src={slide.image} alt="travel" />;
-            });
-          })}
-        </Slide>
-        <ContainerChevronRight onClick={nextSlide}>
-          <ChevronRight type="button" />
-        </ContainerChevronRight>
-      </Slides>
-    </ContainerSlider>
+    /* eslint-disable react/jsx-props-no-spreading */
+    <Slides {...settings}>
+      {SliderData.map((slidery) => {
+        return (
+          <Slide>
+            <img src={slidery.image} alt="travel" />
+          </Slide>
+        );
+      })}
+    </Slides>
   );
 }
