@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaSearch, FaBell } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -14,11 +14,27 @@ import {
 } from './styled';
 
 export default function Header() {
-  const [accountMenuOn, setAccountMenuActive] = useState(0);
-  const showAccountMenu = () => setAccountMenuActive(accountMenuOn + 1);
-  const hideAccountMenu = () => setAccountMenuActive(accountMenuOn - 1);
+  const [accountMenuOn, setAccountMenuActive] = useState(false);
+  const showAccountMenu = () => setAccountMenuActive(true);
+  const hideAccountMenu = () => setAccountMenuActive(false);
+  const [roleHeaderFixed, setRoleHeader] = useState(false);
+
+  const headerFixed = () => {
+    if (window.scrollY >= 1) {
+      setRoleHeader(true);
+    } else {
+      setRoleHeader(false);
+    }
+  };
+
+  window.addEventListener('scroll', headerFixed);
+
+  useEffect(() => {
+    headerFixed();
+  }, []);
+
   return (
-    <Nav>
+    <Nav roleHeaderFixed={roleHeaderFixed}>
       <NavPrimary>
         <Link to="/" title="Netflix">
           <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix" />

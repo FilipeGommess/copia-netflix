@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  position: absolute;
-  background-color: #00000000;
+  position: ${({ roleHeaderFixed }) => (roleHeaderFixed === true ? 'fixed' : 'absolute')};
+  transition: background-color 0.5s;
+  background-color: ${({ roleHeaderFixed }) => (roleHeaderFixed === true ? '#141414' : '#00000000')};
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0));
   height: 68px;
   width: 100%;
@@ -91,7 +92,7 @@ export const AccountMenu = styled.div`
   border: #1f1f1f 1px solid;
   border-radius: 1px;
   flex-direction: column;
-  display: ${({ accountMenuOn }) => (accountMenuOn === 1 ? 'flex' : 'none')};
+  display: ${({ accountMenuOn }) => (accountMenuOn === true ? 'flex' : 'none')};
 
   :hover {
     display: flex;
