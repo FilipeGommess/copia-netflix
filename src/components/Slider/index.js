@@ -1,9 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { SliderData } from './SliderData';
 
-import { Slides, ArrowLeft, ArrowRight, ContainerArrowRight, ContainerArrowLeft, Slide } from './styled';
+import {
+  Slides,
+  Slide,
+  ArrowLeft,
+  ArrowRight,
+  ContainerArrowRight,
+  ContainerArrowLeft,
+  // SlideHeaderSlides,
+  HeaderSlides,
+  ContainerSlides,
+} from './styled';
 
-export default function Slider() {
+/* eslint-disable react/prop-types */
+export default function Slider(titles = []) {
   const settings = {
     slidesToScroll: 5,
     slidesToShow: 5.5,
@@ -25,14 +37,23 @@ export default function Slider() {
   };
   return (
     /* eslint-disable react/jsx-props-no-spreading */
-    <Slides {...settings}>
-      {SliderData.map((slidery) => {
-        return (
-          <Slide>
-            <img src={slidery.image} alt="travel" />
-          </Slide>
-        );
-      })}
-    </Slides>
+    <ContainerSlides>
+      <HeaderSlides>
+        <Link to="/">
+          <h2>{titles.title.map((title) => title)}</h2>
+        </Link>
+      </HeaderSlides>
+      <Slides {...settings}>
+        {SliderData.map((obj) => {
+          return obj.imgMovie.map((slidery) => {
+            return (
+              <Slide>
+                <img src={slidery.image} alt="travel" />
+              </Slide>
+            );
+          });
+        })}
+      </Slides>
+    </ContainerSlides>
   );
 }
