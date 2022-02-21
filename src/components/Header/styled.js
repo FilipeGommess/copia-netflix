@@ -5,7 +5,7 @@ export const Nav = styled.nav`
   transition: background-color 0.5s;
   background-color: ${({ roleHeaderFixed }) => (roleHeaderFixed === true ? '#141414' : '#00000000')};
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0));
-  height: 68px;
+  height: 10.9vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -33,7 +33,6 @@ export const NavPrimary = styled.div`
 
   a {
     font-size: 0.9em;
-    font-size: 1.1vw;
     margin-left: 18px;
     display: flex;
   }

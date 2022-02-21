@@ -73,8 +73,6 @@ export const ContainerArrowLeft = styled.span`
 `;
 
 export const Slide = styled.div`
-  display: flex;
-  align-items: center;
   img {
     border-radius: 3px;
     height: 100%;
@@ -86,7 +84,7 @@ export const Slide = styled.div`
   }
 `;
 
-export const ContainerSlides = styled.div`
+export const ContainerSlider = styled.div`
   height: 32.1vh;
   background-image: linear-gradient(
     to bottom,
@@ -114,7 +112,9 @@ export const HeaderSlides = styled.div`
   h2 {
     color: white;
     font-weight: 500;
-    margin: 0 0 2% 18.2%;
     width: 100%;
+    margin: 0 0 2vh 4.49vw;
   }
 `;
+
+export const Aside = styled.div``;

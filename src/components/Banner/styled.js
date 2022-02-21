@@ -33,7 +33,8 @@ export const InfoNavContainer = styled.div`
 `;
 
 export const Info = styled.div`
-  height: 61vh;
+  height: 49.8%;
+
   position: absolute;
   top: 14.5%;
   bottom: 0;
@@ -63,7 +64,7 @@ export const Synopsis = styled.div`
     font-weight: 500;
     line-height: 1.2;
     width: 100%;
-    font-size: 1.4vw;
+    font-size: 118%;
   }
 `;
 
@@ -71,7 +72,7 @@ export const ContainerSynopsiButtons = styled.div`
   display: flex;
   position: relative;
   height: 6.5vh;
-
+  font-size: 100%;
   width: 100%;
   margin-top: 20px;
 `;
@@ -85,10 +86,11 @@ export const ContainerPlayButton = styled.div`
   height: 100%;
   color: #000000;
   margin-right: 10px;
-  font-weight:500;
+  font-weight: 500;
 
   :hover {
     background-color: rgba(255, 255, 255, 0.75);
+  }
 `;
 
 export const ContainerInfoButton = styled.div`
@@ -112,8 +114,7 @@ export const PlayButton = styled(GrPlayFill)`
   color: rgb(54 27 27);
   background-color: transparent;
   position: relative;
-  width: 23px;
-  height: 23px;
+  font-size: 1.4em;
   margin-right: 10px;
 `;
 
