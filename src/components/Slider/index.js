@@ -9,18 +9,17 @@ import {
   ArrowRight,
   ContainerArrowRight,
   ContainerArrowLeft,
-  // SlideHeaderSlides,
   HeaderSlides,
-  ContainerSlides,
+  ContainerSlider,
+  Aside,
 } from './styled';
 
-/* eslint-disable react/prop-types */
-export default function Slider(titles = []) {
+export default function Slider() {
   const settings = {
     slidesToScroll: 5,
     slidesToShow: 5.5,
     touchMove: false,
-    initialSlide: 1,
+    initialSlide: 11,
     dots: false,
     infinite: true,
     speed: 750,
@@ -35,25 +34,30 @@ export default function Slider(titles = []) {
       </ContainerArrowLeft>
     ),
   };
+
   return (
     /* eslint-disable react/jsx-props-no-spreading */
-    <ContainerSlides>
-      <HeaderSlides>
-        <Link to="/">
-          <h2>{titles.title.map((title) => title)}</h2>
-        </Link>
-      </HeaderSlides>
-      <Slides {...settings}>
-        {SliderData.map((obj) => {
-          return obj.imgMovie.map((slidery) => {
-            return (
-              <Slide>
-                <img src={slidery.image} alt="travel" />
-              </Slide>
-            );
-          });
-        })}
-      </Slides>
-    </ContainerSlides>
+    <Aside>
+      {SliderData.map((obj) => {
+        return (
+          <ContainerSlider>
+            <HeaderSlides>
+              <Link to="/">
+                <h2>{obj.title}</h2>
+              </Link>
+            </HeaderSlides>
+            <Slides {...settings}>
+              {obj.movies.map((movie) => {
+                return (
+                  <Slide>
+                    <img src={movie.image} alt="travel" />
+                  </Slide>
+                );
+              })}
+            </Slides>
+          </ContainerSlider>
+        );
+      })}
+    </Aside>
   );
 }
