@@ -67,7 +67,7 @@ export const SliderData = [
     ],
   },
   {
-    title: ['Em Alta'],
+    title: 'Em Alta',
     movies: [
       {
         image:
@@ -109,6 +109,52 @@ export const SliderData = [
       {
         image:
           'https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfdkHYAWmBBR1Z-UTNkidH7YwWhxIEsKigReyX047-0HS3QjjHmznahfatedp7roD0BhdY9U2PEF69MXM1c0Tf6s2aw3q3twCv_plBBeDKQ2lVfcj3JUJfBnJp3L.jpg?r=6b9',
+      },
+    ],
+  },
+  {
+    title: 'Series para maratonar',
+    movies: [
+      {
+        image:
+          'https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdW82swwh5OZOunOKy1P00O7AP7ccVtma2oyrvOu3oJMr0WETloIhaogPNGeWYSKpe7W-I54Y-2C9qOEiQ_ErVBi1xEt5t1IDWV9YW9pAVNA3Ef5tNZ49oiY_csl.jpg?r=95c',
+      },
+      {
+        image:
+          'https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVHUOJmTjLhLc6CDwpJaXOA3IoOiM1qo4WvLEoc4Zn1IIjr2jmmteI9Gnl8a2qcJ-YrZK7KWieXnggH5Rw4J6LoUCINgmy1qTWyXTrInMwN_BkNR7UMqJD6F0LBN.jpg?r=0dc',
+      },
+      {
+        image:
+          'https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRIEJZ_0z8vT8fPBDFd19wq_0kwXAsC0KOHjSrbP_9CEY3ENd7Wq5KPv-yQGG3X4tTmWSZNdHc0xMWVMgdcO_D3DvNU.webp?r=280',
+      },
+      {
+        image:
+          'https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfF9t6nkpvOyfS_9WlJ7NwSirqDwOejYSiahrrSje01ccnYofMhy3tAhNDtFg0yaJsNgSeGVT5F6fnBrUFGdk9j9M2kX2Gg7USQwtNq8fr0UaPNMa4voCdRVuF-_.jpg?r=758',
+      },
+      {
+        image:
+          'https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABerSNUrF3kx8d9RuQkLuYvN9bNBUGF25YxnbSyILzPxwIDLUQP48yX8rSdH14S8L3wtg1zP43He8JrFTmKCAWsyDOG8.webp?r=d6e',
+      },
+      // Role 2
+      {
+        image:
+          'https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRriYHcoQBpl1A9W4yZQiDklb9ANkOJJEC1nKF0Ws4x5FV6mooM5gqh4t7lD50vQ3J2Xgymb55Oi5GblcZT5K1Ts6mY.webp?r=4ae',
+      },
+      {
+        image:
+          'https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRj_vIe58aei47XCsMZyxUAFYV6UuRU2z_NYCkdthUvhz7thuPrX_Nc1UnC7FgVtkmGmk8o2w2w3uDdS55GIzRXtDsl4xgW9LWQw6yQAkbNklj9yK-Utg18D7Ga3.jpg?r=808',
+      },
+      {
+        image:
+          'https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQW_qUXXXe3XyEAb5bocPOr68uYLUrbPbB67o8qHQT9De0JHVv8Op3gDtgiScj8uNB9vKwMpw4QQ7z_AbHT3rL2usdOsblud9id2CfLGMx8v1OFetgfx5DozNMB1.jpg?r=c75',
+      },
+      {
+        image:
+          'https://occ-0-4301-559.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSEl8LWx4tMJIM9Atm3F1Y49Uq6X01tnDe8gPA6d84-gQ767saz9z7Jxj9sFozuI8bcM2vlxeP9IPq3Aa7jxLlkMu8JGjizRLblNEcmD7g-Z2NeZvkvV5nWF9DmJ.jpg?r=393',
+      },
+      {
+        image:
+          'https://occ-0-4301-559.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABY-Eo0aCEB5J8hvL2QGy7QHkx-ey4G9NHgJIBpGNmF8Bw9EO9OJLtHTsuCkN5KDyCmTIk6EmvBOxQi8SBIBJ2Ec_6JlCr0F5NrMHvXKlDfLa6yQCarVI7HF3v4oL.jpg?r=2ee',
       },
     ],
   },

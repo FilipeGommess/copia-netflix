@@ -19,7 +19,7 @@ export default function Slider() {
     slidesToScroll: 5,
     slidesToShow: 5.5,
     touchMove: false,
-    initialSlide: 11,
+    initialSlide: 0,
     dots: false,
     infinite: true,
     speed: 750,
@@ -38,9 +38,9 @@ export default function Slider() {
   return (
     /* eslint-disable react/jsx-props-no-spreading */
     <Aside>
-      {SliderData.map((obj) => {
+      {SliderData.map((obj, index) => {
         return (
-          <ContainerSlider>
+          <ContainerSlider num={index}>
             <HeaderSlides>
               <Link to="/">
                 <h2>{obj.title}</h2>

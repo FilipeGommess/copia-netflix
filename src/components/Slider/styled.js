@@ -86,20 +86,7 @@ export const Slide = styled.div`
 
 export const ContainerSlider = styled.div`
   height: 32.1vh;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(20, 20, 20, 0) 0,
-    rgba(20, 20, 20, 0.15) 15%,
-    rgba(20, 20, 20, 0.35) 29%,
-    rgba(20, 20, 20, 0.58) 44%,
-    #141414 68%,
-    #141414 100%
-  );
-  background-size: 100% 100%;
-  background-position: 0 top;
-  background-repeat: repeat-x;
-  background-color: transparent;
-  margin: 3vw 0;
+  margin: 2vw 0;
   padding: 0;
   position: relative;
 `;
@@ -117,4 +104,6 @@ export const HeaderSlides = styled.div`
   }
 `;
 
-export const Aside = styled.div``;
+export const Aside = styled.div`
+  /* margin-top: 6vw; */
+`;

@@ -93,10 +93,6 @@ export const AccountMenu = styled.div`
   flex-direction: column;
   display: ${({ accountMenuOn }) => (accountMenuOn === true ? 'flex' : 'none')};
 
-  :hover {
-    display: flex;
-  }
-
   p:hover {
     border-bottom: 1px solid #fff;
     margin-bottom: -1px;

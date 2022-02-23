@@ -2,22 +2,29 @@ import styled from 'styled-components';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
 import { GrPlayFill } from 'react-icons/gr';
 
+export const Banner = styled.div`
+  display: block;
+  width: 100%;
+  height: 86.33vh;
+  position: relative;
+  z-index: 0;
+`;
+
 export const Container = styled.div`
   height: 56.25vw;
-  position: absolute;
   width: 100%;
-  img {
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    background-size: cover;
-    background-position: center center;
-    opacity: 1;
-    width: 100%;
-  }
+  background-image: url('https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABcl4c6VusrckzJZs4Z2xZZ6ZtGg6ftkh8X8L4wsnTzAsrXsMG1wOK3v87XCfQHrmf8ZxfkOHd06MYu-hhJQNi_2XEXKi.webp?r=ec1');
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  opacity: 1;
   z-index: -1;
+  display: flex;
+  flex-direction: column-reverse;
 `;
 
 export const InfoNavContainer = styled.div`
@@ -154,4 +161,25 @@ export const AgeClassification = styled.div`
   border: 5px #d7262d solid;
   margin-left: 1vw;
   border-radius: 2px;
+`;
+
+export const Border = styled.div`
+  height: 32.1vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(20, 20, 20, 0) 0,
+    rgba(20, 20, 20, 0.15) 15%,
+    rgba(20, 20, 20, 0.35) 29%,
+    rgba(20, 20, 20, 0.58) 44%,
+    #141414 68%,
+    #141414 100%
+  );
+  background-size: 100% 100%;
+  background-position: 0 top;
+  background-repeat: repeat-x;
+  background-color: transparent;
+  padding: 0;
+  margin: -10px 0;
+  position: relative;
+  width: 100%;
 `;

@@ -40,7 +40,6 @@ export default function Header() {
           <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix" />
         </Link>
         <ul>
-          <li />
           <li>
             <Link to="/">Início</Link>
           </li>
