@@ -5,7 +5,7 @@ export const Nav = styled.nav`
   transition: background-color 0.5s;
   background-color: ${({ roleHeaderFixed }) => (roleHeaderFixed === true ? '#141414' : '#00000000')};
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0));
-  height: 10.9vh;
+  height: 41px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -14,15 +14,19 @@ export const Nav = styled.nav`
   padding-left: 34px;
   z-index: 1;
   img {
-    width: 98px;
+    width: 64px;
+    @media screen and (min-width: 950px) {
+      width: 92px;
+    }
   }
-
   ul {
     display: flex;
   }
-
   a {
     color: #e5e5e5;
+  }
+  @media screen and (min-width: 950px) {
+    height: 68px;
   }
 `;
 
@@ -32,8 +36,11 @@ export const NavPrimary = styled.div`
   justify-content: center;
 
   a {
-    font-size: 0.9em;
-    margin-left: 18px;
+    font-size: 1vw;
+    margin-left: none;
+    @media screen and (min-width: 884px) {
+      margin-left: 18px;
+    }
     display: flex;
   }
   a:hover {
@@ -46,6 +53,11 @@ export const NavPrimary = styled.div`
   img {
     margin-top: 3px;
   }
+  @media screen and (max-width: 884px) {
+    ul {
+      display: none;
+    }
+  }
 `;
 
 export const NavSecondary = styled.div`
@@ -56,7 +68,7 @@ export const NavSecondary = styled.div`
   top: 0;
   height: 100%;
   a {
-    font-size: 1.5em;
+    font-size: 1.5vw;
     padding: 10px;
     display: flex;
   }
@@ -152,5 +164,40 @@ export const ConfigsAccountMenu = styled.div`
   a {
     padding: 10px 10px 3px 10px;
     font-weight: 500;
+  }
+`;
+
+export const HamburguerMenu = styled.div`
+  display: ${({ mobileMenu }) => (mobileMenu === true ? 'block' : 'none')};
+  color: white;
+  position: absolute;
+  width: 260px;
+  top: 67px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: solid 1px rgba(255, 255, 255, 0.15);
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 13px;
+    li {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+`;
+
+export const MobileNavegation = styled.div`
+  display: none;
+  @media screen and (max-width: 884px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 0.85vw;
+    margin-left: 1vw;
   }
 `;

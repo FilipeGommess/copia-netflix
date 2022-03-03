@@ -11,14 +11,18 @@ import {
   AccountMenu,
   Profiles,
   ConfigsAccountMenu,
+  HamburguerMenu,
+  MobileNavegation,
 } from './styled';
 
 export default function Header() {
   const [accountMenuOn, setAccountMenuActive] = useState(false);
-  const showAccountMenu = () => setAccountMenuActive(true);
-  const hideAccountMenu = () => setAccountMenuActive(false);
-  const [roleHeaderFixed, setRoleHeader] = useState(false);
+  const showAccountMenu = () => setAccountMenuActive(!accountMenuOn);
 
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const showMobileMenu = () => setMobileMenu(!mobileMenu);
+
+  const [roleHeaderFixed, setRoleHeader] = useState(false);
   const headerFixed = () => {
     if (window.scrollY >= 1) {
       setRoleHeader(true);
@@ -39,6 +43,29 @@ export default function Header() {
         <Link to="/" title="Netflix">
           <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix" />
         </Link>
+        <MobileNavegation onClick={showMobileMenu}>
+          <Link to="/">Navegar</Link>
+          <SortDown />
+        </MobileNavegation>
+        <ul>
+          <li>
+            <Link to="/">Início</Link>
+          </li>
+          <li>
+            <Link to="/">Séries</Link>
+          </li>
+          <li>
+            <Link to="/">Filmes</Link>
+          </li>
+          <li>
+            <Link to="/">Bombando</Link>
+          </li>
+          <li>
+            <Link to="/">Minha lista</Link>
+          </li>
+        </ul>
+      </NavPrimary>
+      <HamburguerMenu mobileMenu={mobileMenu}>
         <ul>
           <li>
             <Link to="/">Início</Link>
@@ -56,7 +83,7 @@ export default function Header() {
             <Link to="****">Minha lista</Link>
           </li>
         </ul>
-      </NavPrimary>
+      </HamburguerMenu>
       <NavSecondary>
         <div>
           <Link to="*">
@@ -68,7 +95,7 @@ export default function Header() {
             <FaBell />
           </Link>
         </div>
-        <DivProfile onMouseOver={showAccountMenu} onMouseOut={hideAccountMenu}>
+        <DivProfile onMouseOver={showAccountMenu} onMouseOut={showAccountMenu}>
           <img
             src="https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABXrmj4H9RUyDiO28L-KJxDGc9oDijd4jnl5RyCkiWMPB6xFxiVdRiKdOcNjG8kn4A3idJRTGAzuBuQ__c6yl1m0.png?r=fcc"
             alt="Usuário"
