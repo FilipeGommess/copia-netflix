@@ -27,6 +27,9 @@ export default createGlobalStyle`
     width: 100%;
     height: 100%;
     background-color:#141414;
+    @media screen and (max-width: 884px) {
+      font-size: 1.2vw;
+    }
   }
 
   a {

@@ -13,7 +13,7 @@ export const Banner = styled.div`
 export const Container = styled.div`
   height: 56.25vw;
   width: 100%;
-  background-image: url('https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABcl4c6VusrckzJZs4Z2xZZ6ZtGg6ftkh8X8L4wsnTzAsrXsMG1wOK3v87XCfQHrmf8ZxfkOHd06MYu-hhJQNi_2XEXKi.webp?r=ec1');
+  background-image: url('https://occ-0-4762-559.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWfFn21uF54f9pBou27cSt9xX3-MKNpncEq2guYpOE1uWXNqgE7uMcBZkpbrKW5nTKQQRMfLk2xQ6xKa4pZsp6zJSqoO.webp?r=8e1');
   left: 0;
   right: 0;
   top: 0;
@@ -71,7 +71,7 @@ export const Synopsis = styled.div`
     font-weight: 500;
     line-height: 1.2;
     width: 100%;
-    font-size: 118%;
+    font-size: 1.35vw;
   }
 `;
 
@@ -111,6 +111,7 @@ export const ContainerInfoButton = styled.div`
   align-items: center;
   border-radius: 3px;
   z-index: 20;
+  font-size: 0.9rem;
 
   :hover {
     background-color: rgba(109, 109, 110, 0.4);
@@ -179,7 +180,7 @@ export const Border = styled.div`
   background-repeat: repeat-x;
   background-color: transparent;
   padding: 0;
-  margin: -10px 0;
+  margin: -10px;
   position: relative;
   width: 100%;
 `;

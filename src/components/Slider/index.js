@@ -33,6 +33,29 @@ export default function Slider() {
         <ArrowLeft />
       </ContainerArrowLeft>
     ),
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 4.5,
+          slidesToScroll: 4,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 3.5,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 2.5,
+          slidesToScroll: 2,
+        },
+      },
+    ],
   };
 
   return (
