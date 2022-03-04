@@ -11,7 +11,7 @@ import {
   ContainerArrowLeft,
   HeaderSlides,
   ContainerSlider,
-  Aside,
+  Movies,
 } from './styled';
 
 export default function Slider() {
@@ -51,7 +51,7 @@ export default function Slider() {
       {
         breakpoint: 500,
         settings: {
-          slidesToShow: 2.5,
+          slidesToShow: 2,
           slidesToScroll: 2,
         },
       },
@@ -60,7 +60,7 @@ export default function Slider() {
 
   return (
     /* eslint-disable react/jsx-props-no-spreading */
-    <Aside>
+    <Movies>
       {SliderData.map((obj, index) => {
         return (
           <ContainerSlider num={index}>
@@ -81,6 +81,6 @@ export default function Slider() {
           </ContainerSlider>
         );
       })}
-    </Aside>
+    </Movies>
   );
 }

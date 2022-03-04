@@ -16,23 +16,22 @@ import {
 } from './styled';
 
 export default function Header() {
-  const [accountMenuOn, setAccountMenuActive] = useState(false);
-  const showAccountMenu = () => setAccountMenuActive(!accountMenuOn);
+  const [accountMenuOn, setAccountMenu] = useState(false);
+  const showAccountMenu = () => setAccountMenu(!accountMenuOn);
 
   const [mobileMenu, setMobileMenu] = useState(false);
   const showMobileMenu = () => setMobileMenu(!mobileMenu);
 
-  const [roleHeaderFixed, setRoleHeader] = useState(false);
+  const [roleHeaderFixed, setHeaderFixed] = useState(false);
   const headerFixed = () => {
     if (window.scrollY >= 1) {
-      setRoleHeader(true);
+      setHeaderFixed(true);
     } else {
-      setRoleHeader(false);
+      setHeaderFixed(false);
     }
   };
 
   window.addEventListener('scroll', headerFixed);
-
   useEffect(() => {
     headerFixed();
   }, []);

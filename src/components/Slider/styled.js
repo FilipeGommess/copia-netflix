@@ -104,6 +104,4 @@ export const HeaderSlides = styled.div`
   }
 `;
 
-export const Aside = styled.div`
-  /* margin-top: 6vw; */
-`;
+export const Movies = styled.div``;

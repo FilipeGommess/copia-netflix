@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
 import { GrPlayFill } from 'react-icons/gr';
 
-export const Banner = styled.div`
+export const BannerContainer = styled.div`
   display: block;
   width: 100%;
   height: 86.33vh;
@@ -27,7 +27,7 @@ export const Container = styled.div`
   flex-direction: column-reverse;
 `;
 
-export const InfoNavContainer = styled.div`
+export const LogoAndTextContainer = styled.div`
   background: linear-gradient(77deg, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 85%);
   position: absolute;
   top: 0;
@@ -39,7 +39,7 @@ export const InfoNavContainer = styled.div`
   flex-direction: column;
 `;
 
-export const Info = styled.div`
+export const LogoAndText = styled.div`
   height: 49.8%;
 
   position: absolute;
@@ -61,7 +61,7 @@ export const Info = styled.div`
   }
 `;
 
-export const Synopsis = styled.div`
+export const Text = styled.div`
   width: 100%;
   position: relative;
   margin-top: 3vh;
@@ -75,7 +75,7 @@ export const Synopsis = styled.div`
   }
 `;
 
-export const ContainerSynopsiButtons = styled.div`
+export const ContainerBannerButtons = styled.div`
   display: flex;
   position: relative;
   height: 6.5vh;
