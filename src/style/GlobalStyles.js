@@ -1,14 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-  @font-face {
-    font-family: 'Netflix Sans';
-    font-weight: normal;
-    font-style:normal;
-    src: url('../fonts/OTF/NetflixSans-Regular.otf')
-     format('opentype');
-
-  }
   *{
     margin: 0;
     padding: 0;

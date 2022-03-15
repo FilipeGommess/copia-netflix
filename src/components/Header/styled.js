@@ -10,7 +10,7 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 43.9px;
+  padding-right: 44px;
   padding-left: 34px;
   z-index: 1;
   img {

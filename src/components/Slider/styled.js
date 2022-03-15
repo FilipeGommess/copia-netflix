@@ -75,7 +75,6 @@ export const ContainerArrowLeft = styled.span`
 export const Slide = styled.div`
   img {
     border-radius: 3px;
-    height: 100%;
     width: 99%;
     padding: 0 0.1vw;
     :hover {
@@ -85,22 +84,31 @@ export const Slide = styled.div`
 `;
 
 export const ContainerSlider = styled.div`
-  height: 32.1vh;
+  height: 30vh;
   margin: 2vw 0;
   padding: 0;
   position: relative;
+  @media screen and (max-width: 800px) {
+    height: 27vh;
+  }
+  @media screen and (max-width: 600px) {
+    height: 23vh;
+  }
 `;
 
 export const HeaderSlides = styled.div`
   height: 6.3vh;
-  font-size: 0.99vw;
+  font-size: 1vw;
   display: flex;
   align-items: center;
   h2 {
     color: white;
     font-weight: 500;
     width: 100%;
-    margin: 0 0 2vh 4.49vw;
+    margin: 0 0 2vh 4vw;
+    @media screen and (max-width: 800px) {
+      font-size: 12px;
+    }
   }
 `;
 

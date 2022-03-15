@@ -5,7 +5,7 @@ import { GrPlayFill } from 'react-icons/gr';
 export const BannerContainer = styled.div`
   display: block;
   width: 100%;
-  height: 86.33vh;
+  height: 40vw;
   position: relative;
   z-index: 0;
 `;
@@ -32,7 +32,7 @@ export const LogoAndTextContainer = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  right: 26.09%;
+  right: 26%;
   bottom: 0;
   opacity: 1;
   display: flex;
@@ -40,7 +40,7 @@ export const LogoAndTextContainer = styled.div`
 `;
 
 export const LogoAndText = styled.div`
-  height: 49.8%;
+  height: 50%;
 
   position: absolute;
   top: 14.5%;
@@ -78,7 +78,7 @@ export const Text = styled.div`
 export const ContainerBannerButtons = styled.div`
   display: flex;
   position: relative;
-  height: 6.5vh;
+  height: 3vw;
   font-size: 100%;
   width: 100%;
   margin-top: 20px;
@@ -94,6 +94,10 @@ export const ContainerPlayButton = styled.div`
   color: #000000;
   margin-right: 10px;
   font-weight: 500;
+  @media screen and (max-width: 884px) {
+    width: 12vw;
+    height: 4vh;
+  }
 
   :hover {
     background-color: rgba(255, 255, 255, 0.75);
@@ -111,7 +115,11 @@ export const ContainerInfoButton = styled.div`
   align-items: center;
   border-radius: 3px;
   z-index: 20;
-  font-size: 0.9rem;
+
+  @media screen and (max-width: 884px) {
+    width: 17vw;
+    height: 4vh;
+  }
 
   :hover {
     background-color: rgba(109, 109, 110, 0.4);
@@ -122,7 +130,7 @@ export const PlayButton = styled(GrPlayFill)`
   color: rgb(54 27 27);
   background-color: transparent;
   position: relative;
-  font-size: 1.4em;
+  font-size: 150%;
   margin-right: 10px;
 `;
 
@@ -130,11 +138,8 @@ export const InfoButton = styled(AiOutlineInfoCircle)`
   color: #fff;
   background-color: transparent;
   position: relative;
-
-  height: 35px;
-  width: 35px;
   margin-right: 10px;
-  padding: 4px;
+  font-size: 150%;
 `;
 
 export const ContainerClassification = styled.div`
@@ -142,7 +147,7 @@ export const ContainerClassification = styled.div`
   right: 0;
   bottom: 35%;
   background-color: rgba(51, 51, 51, 0.6);
-  width: 6.9vw;
+  width: 7vw;
   border-left: 3px solid #fff;
   height: 5.1vh;
   display: flex;
@@ -165,7 +170,7 @@ export const AgeClassification = styled.div`
 `;
 
 export const Border = styled.div`
-  height: 32.1vh;
+  height: 32vh;
   background-image: linear-gradient(
     to bottom,
     rgba(20, 20, 20, 0) 0,
